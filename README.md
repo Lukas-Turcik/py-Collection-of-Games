@@ -4,11 +4,12 @@
 # Features
 ## Explain me the GUI
 After running `main.py`, you see the main menu from which you can select one of the four games:
+
 <img src="Screenshots/main_menu.png" alt="Main Menu" width="180"><br>
 
 Please see the description of the individual games below.
 ### Turtle Race
-You need to guess which of the 6 turtles will win the race by typing its color ("red","orange","yellow","green","blue","purple"). If you guess the color of the winning turtle, you win!
+You need to guess which of the 6 turtles will win the race by typing its color (red, orange, yellow, green, blue, purple). If you guess the color of the winning turtle, you win!
 
 ### Snake
 Use arrows to find and eat the food for your snake. After each game, your current score is written into the 'snake_score.txt' file in the program folder so that you know what score you achieved when.
