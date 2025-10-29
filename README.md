@@ -1,29 +1,24 @@
-# Introducing Amazon Price Tracker
-**Amazon Price Tracker** is a simple Python application that tracks the price of your specified products on Amazon once a day and notifies you via email in case the price is below the threshold set by you.
+# Introducing Collection of Games
+**Collection of Games** is a Python GUI application, inspired by the [100 Days of Code](https://www.udemy.com/course/100-days-of-code/) online course, that lets you play one of the following games: Turtle Race, Snake, Pong, Turtle Crossing.
 
 # Features
-The products to track and their price limits are specified by you in the 'products_to_track.csv' file, which expect a simple content:
-    
-<img src="Screenshots/products_to_track.png" alt="Products to Track" width="350"><br>
+## Explain me the GUI
+After running `main.py`, you see the main menu from which you can select one of the four games:
+<img src="Screenshots/main_menu.png" alt="Main Menu" width="180"><br>
 
-If the price of the product is below the limit you set in the CSV file, the recipients get an email notification:
+Please see the description of the individual games below.
+### Turtle Race
+You need to guess which of the 6 turtles will win the race by typing its color ("red","orange","yellow","green","blue","purple"). If you guess the color of the winning turtle, you win!
 
-<img src="Screenshots/notification_email.png" alt="Products to Track" width="550"><br>
+### Snake
+Use arrows to find and eat the food for your snake. After each game, your current score is written into the 'snake_score.txt' file in the program folder so that you know what score you achieved when.
 
-The application also writes the prices into the 'tracker.log' file where you can see the daily price developments:
+### Pong
+For 2 players. One player uses arrows key (UP/DOWN), the other player uses Q/A key for control. The ball speed increases over time.
 
-<img src="Screenshots/tracker_log.png" alt="Products to Track" width="350"><br>
-
+### Turtle Crossing
+Using the UP arrow key, your goal is to make the turtle get safely to the other side of the street. Careful, the density of the traffic and its speed increases with each level.
 
 # Installation and Setup
 - Download the entire project code to your computer and unzip files locally.
-- Install the following packages that are not part of the standard Python installation if you don't have them yet:
-    - pip install beautifulsoup4
-    - pip install lxml
-    - pip install requests
-    - pip install python-dotenv
-    - pip install pandas
-- This project uses Gmail account for sending the email notification. You need to get the gmail <a href="https://myaccount.google.com/apppasswords" target="_blank">App Password</a> for your Google Account.
-- open the .env file and populate the first three entries (email_address, email_password and recipients)
-- Fill in 'products_to_track.csv' with your price_limit, friendly name and URL
-- Schedule the 'price_tracker.py' to run on daily basis (e.g. using Windows Task Scheduler on your server or in the cloud using, e.g.  <a href="https://www.pythonanywhere.com/" target="_blank">PythonAnywhere</a>)
+- Run `main.py` with Python
